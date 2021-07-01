@@ -7,6 +7,10 @@ import net.bytebuddy.implementation.bind.annotation.SuperCall;
 import java.lang.reflect.Method;
 import java.util.concurrent.Callable;
 
+/**
+ * https://www.cnblogs.com/sea520/p/12230802.html
+ * https://www.cnblogs.com/xiaofuge/p/13150507.html(其他文章也不错）
+ */
 public class TimeInterceptor {
     @RuntimeType
     public static Object intercept(@Origin Method method, @SuperCall Callable<?> callable)
